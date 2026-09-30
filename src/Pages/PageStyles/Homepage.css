@@ -1,0 +1,28 @@
+.clothings-container,.sports-container,.electronics-container{
+    display:flex;
+    justify-content: space-around;
+}
+.home-clothes-card,.home-sports-card,.home-electronics-card{
+    width:20%;
+    height:fit-content;
+    border-radius: 15px;
+    transition: linear 2ms;
+}
+.home-clothes-card img,.home-sports-card img,.home-electronics-card img{
+    width:95%;
+    height: 250px !important;
+    object-fit: contain;
+}
+.offer{
+    background-color: rgb(64, 64, 64);
+}
+.home-clothes-card:hover,
+.home-sports-card:hover,
+.home-electronics-card:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px 3px gray;
+}
+.offer:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 1px 4px 3px rgb(228, 227, 227);
+}

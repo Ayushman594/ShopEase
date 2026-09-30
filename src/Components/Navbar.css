@@ -1,0 +1,28 @@
+.container {
+  padding: 15px !important;
+}
+
+.nav-links {
+  flex-grow: 1 !important;
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+}
+
+.siteName {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links .navbar-nav {
+  margin-left: auto !important;
+  align-items: center !important;
+  margin-right: 20px !important;
+  padding: 0 !important;
+}
+
+.navbar {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
