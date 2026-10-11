@@ -1,0 +1,109 @@
+
+/* Login page container */
+.login {
+    width: 100%;
+    max-width: 480px;
+    margin: 35px auto !important;
+    padding: 20px !important;
+}
+
+/* Heading */
+.login h2 {
+    color: #172554;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px !important;
+}
+
+/* Login form card */
+.login form {
+    width: 100%;
+    padding: 30px !important;
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.login form:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Labels */
+.login .form-label {
+    display: block;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+}
+
+/* Input fields */
+.login .form-control {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 12px !important;
+    background: #f9fafb;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login .form-control:focus {
+    background: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    outline: none;
+}
+
+/* Spacing */
+.login form .mb-3 {
+    margin-bottom: 20px !important;
+}
+
+/* Validation messages */
+.login form .text-danger {
+    display: block;
+    color: #dc2626 !important;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Login button */
+.login .btn-primary {
+    width: 100%;
+    padding: 12px !important;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .login {
+        padding: 12px !important;
+        margin-top: 20px !important;
+    }
+
+    .login h2 {
+        font-size: 26px;
+    }
+
+    .login form {
+        padding: 22px !important;
+    }
+}

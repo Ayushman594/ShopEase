@@ -1,0 +1,87 @@
+
+.register {
+    width: 100%;
+    max-width: 520px;
+    margin: 30px auto !important;
+    padding: 20px !important;
+}
+
+.register h2 {
+    color: #172554;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px !important;
+}
+
+.register form {
+    width: 100%;
+    padding: 30px !important;
+    background: #fff !important;
+    color: #1f2937 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.register .mb-3 {
+    margin-bottom: 18px !important;
+}
+
+.register .form-label {
+    display: block;
+    margin-bottom: 8px !important;
+    font-weight: 600;
+}
+
+.register .form-control {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px !important;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #f9fafb;
+}
+
+.register .form-control:focus {
+    border-color: #2563eb;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    outline: none;
+}
+
+.register .btn-primary {
+    width: 100%;
+    padding: 12px !important;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    font-weight: 600;
+}
+
+.register .btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.register form p {
+    margin-top: 18px !important;
+    text-align: center;
+}
+
+.register form p a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .register {
+        max-width: 100%;
+        padding: 12px !important;
+        margin-top: 15px !important;
+    }
+
+    .register form {
+        padding: 22px !important;
+    }
+}

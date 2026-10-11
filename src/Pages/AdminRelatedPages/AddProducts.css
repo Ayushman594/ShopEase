@@ -1,0 +1,106 @@
+
+/* Page wrapper */
+.p-3 {
+    box-sizing: border-box;
+}
+
+/* Add/Edit product form */
+form:has(#pname) {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto !important;
+    padding: 30px !important;
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Form heading */
+form:has(#pname) h3 {
+    color: #172554;
+    font-size: 24px !important;
+    font-weight: 700;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Labels */
+form:has(#pname) .form-label {
+    display: block;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+}
+
+/* Input fields */
+form:has(#pname) .form-control {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px !important;
+    color: #111827;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form:has(#pname) .form-control:focus {
+    background: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    outline: none;
+}
+
+/* Field spacing */
+form:has(#pname) .mb-3 {
+    margin-bottom: 20px !important;
+}
+
+/* Validation messages */
+form:has(#pname) .text-warning {
+    display: block;
+    color: #dc2626 !important;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* Add/Update button */
+form:has(#pname) .btn-primary {
+    width: 100%;
+    padding: 12px !important;
+    margin-top: 5px !important;
+    color: #ffffff;
+    background: #2563eb;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+form:has(#pname) .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Back button */
+button.btn-primary {
+    transition: background 0.2s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    form:has(#pname) {
+        padding: 20px !important;
+        margin: 10px auto !important;
+    }
+
+    form:has(#pname) h3 {
+        font-size: 21px !important;
+    }
+}

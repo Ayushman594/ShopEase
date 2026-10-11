@@ -1,0 +1,250 @@
+.settings-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Main content */
+
+.settings-content {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+/* Heading */
+
+.settings-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+/* Settings cards */
+
+.settings-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.settings-card h4 {
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.settings-description {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form */
+
+.settings-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.settings-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #495057;
+}
+
+.settings-input-group input {
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px !important;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.settings-input-group input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+/* Buttons */
+
+.settings-primary-btn {
+    margin-top: 25px;
+    padding: 9px 18px !important;
+    border: none;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.settings-primary-btn:hover {
+    background-color: #0b5ed7;
+}
+
+/* Notifications */
+
+.notification-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-setting strong {
+    font-size: 15px;
+}
+
+.notification-setting p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+/* Toggle switch */
+
+.switch {
+    position: relative;
+    width: 48px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #ced4da;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+    background-color: #0d6efd;
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(23px);
+}
+
+/* Account / logout */
+
+.danger-card {
+    border-color: #f1caca;
+}
+
+.logout-btn {
+    padding: 9px 20px !important;
+    border: none;
+    border-radius: 6px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background-color: #bb2d3b;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .settings-content {
+        padding: 25px;
+    }
+
+    .settings-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .settings-page {
+        display: block;
+    }
+
+    .settings-content {
+        padding: 20px 15px;
+    }
+
+    .settings-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .settings-card {
+        padding: 20px;
+    }
+
+    .notification-setting {
+        gap: 20px;
+    }
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .settings-content {
+        padding: 15px 10px;
+    }
+
+    .settings-card {
+        padding: 16px;
+    }
+
+    .settings-title {
+        font-size: 22px;
+    }
+
+    .notification-setting {
+        align-items: flex-start;
+    }
+
+}

@@ -3,3 +3,10 @@
   height: 90vh;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}

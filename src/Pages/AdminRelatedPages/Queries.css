@@ -1,0 +1,103 @@
+.query-table {
+    width: 95%;
+    margin: 20px auto !important;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 5px !important;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+.query-table thead {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.query-table th {
+    padding: 15px !important;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Table Body */
+.query-table td {
+    padding: 14px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Message column */
+.query-table td:nth-child(5) {
+    max-width: 300px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Row hover */
+.query-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.query-table tbody tr:hover {
+    background-color: #f2f6fc;
+}
+
+/* Delete button */
+.query-table .btn-danger {
+    padding: 7px 15px !important;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.query-table .btn-danger:hover {
+    transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .query-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .query-table th,
+    .query-table td {
+        padding: 10px !important;
+    }
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+}
+table{
+    border-radius: 25px !important;
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width:1000px) and (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    height: auto; /* Adjust height for medium screens */
+  }
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .main-container {
+    flex-direction: row;
+    height: auto; /* Adjust height for medium screens */
+  }
+}
