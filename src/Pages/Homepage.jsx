@@ -2,7 +2,7 @@ import ShopNavbar from "../Components/Navbar"
 import logo from '../assets/Images/Logo (1).png'
 import CarouselFadeExample from "../Components/Carousel"
 import { Link } from "react-router-dom"
-import './PageStyles/Homepage.css'
+import './HomePageStyles/Homepage.css'
 function Homepage() {
 
   const exploreClothings=[{
@@ -38,6 +38,8 @@ function Homepage() {
     img:'https://m.media-amazon.com/images/I/71dZBla7wUL._AC_SR480,440_.jpg',
     name:'Nothing Phone (3a Lite) (Black, 128 GB) (8 GB RAM)',
   }]
+
+
   return (
     <>
       <ShopNavbar/>

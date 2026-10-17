@@ -19,6 +19,8 @@ import ProtectedRoute from './Components/ProtectedRoutes.jsx';
 import ViewProducts from './Pages/UserRelatedPages/ViewProducts.jsx';
 import UserDashboard from './Pages/UserRelatedPages/Userdashboard.jsx';
 import Terms from './Pages/Terms.jsx';
+import Profile from './Pages/UserRelatedPages/Profile.jsx';
+
 
 const router = createBrowserRouter([
   { 
@@ -91,6 +93,12 @@ const router = createBrowserRouter([
 },{
   path:'/terms',
   element:<Terms/>
+},{
+  path:'/user/profile',
+  element:<Profile/>
+},{
+  path:'/admin/profile',
+  element:<Profile/>
 }
 ]);
 

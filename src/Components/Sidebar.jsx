@@ -11,7 +11,7 @@ function Sidebar() {
           <li><Link to="/admin/products">Update Products</Link></li>
           <li><Link to="/admin/orders">View Orders</Link></li>
           <li><Link to="/admin/queries">All Queries</Link></li>
-          {/* <li><Link to="/admin/settings">Settings</Link></li> */}
+          <li><Link to="/admin/profile">Profile</Link></li>
           <li><Link to="/login">Logout</Link></li>
         </ul>
       </div>

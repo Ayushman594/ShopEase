@@ -1,5 +1,5 @@
 import Navbar from '../Components/Navbar';
-import './PageStyles/ContactPage.css';
+import './HomePageStyles/ContactPage.css';
 import { useForm } from 'react-hook-form';
 import Allservices from '../Services/Services.jsx';
 function ContactPage() {

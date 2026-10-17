@@ -43,7 +43,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Allservices from "../Services/Services";
 import Navbar from "../Components/Navbar";
-import "./PageStyles/ProductsPage.css";
+import "./HomePageStyles/ProductsPage.css";
 
 function Products() {
     const { category } = useParams();

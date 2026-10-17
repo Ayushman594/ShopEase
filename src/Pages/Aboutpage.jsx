@@ -1,5 +1,5 @@
 import Navbar from "../Components/Navbar";
-import './PageStyles/Aboutpage.css'
+import './HomePageStyles/Aboutpage.css'
 function Aboutpage() {
   return (
     <>

@@ -10,6 +10,7 @@ function Sidebar() {
           <li><Link to="/user/dashboard">Dashboard</Link></li>
           <li><Link to="/user/products">View Products</Link></li>
           <li><Link to="/user/cart">My Cart</Link></li>
+          <li><Link to="/user/profile">Profile</Link></li>
           <li><Link to="/login">Logout</Link></li>
         </ul>
       </div>
